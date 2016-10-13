@@ -1,0 +1,25 @@
+﻿<Window x:Class="TableLoader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TableLoader"
+        mc:Ignorable="d"
+        Title="Azure Table Downloader" Height="251.196" Width="525" ResizeMode="CanMinimize" Icon="favicon.ico">
+    <Grid Height="223" Margin="0,0,0.4,0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,30,0,0" TextWrapping="Wrap" Text="DefaultEndpointsProtocol=https;AccountName=&lt;YOUR_TEXT&gt;;AccountKey=&lt;YOUR_TEXT&gt;" VerticalAlignment="Top" Width="498"/>
+        <Label x:Name="label" Content="Azure Storage Account Connection String" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Table Name" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="10,97,0,0" TextWrapping="Wrap" Text="TableName" VerticalAlignment="Top" Width="149"/>
+        <Label x:Name="label2" Content="Output Path" HorizontalAlignment="Left" Margin="187,71,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="187,97,0,0" TextWrapping="Wrap" Text="out.csv" VerticalAlignment="Top" Width="283"/>
+        <Button x:Name="button" Content="Start Download" HorizontalAlignment="Left" Margin="411,151,0,0" VerticalAlignment="Top" Width="97" Click="button_Click" Height="32"/>
+        <Button x:Name="button1" Content="..." HorizontalAlignment="Left" Margin="475,97,0,0" VerticalAlignment="Top" Width="33" RenderTransformOrigin="3.175,1.404" Height="23" Click="button1_Click"/>
+        <StatusBar x:Name="statusBar" HorizontalAlignment="Left" Height="34" Margin="1,188,0,0" VerticalAlignment="Top" Width="517">
+            <ListBoxItem x:Name="LB1" Content="..."/>
+            <ListBoxItem Content="(c) basti-sk.com 2016"/>
+        </StatusBar>
+        <Label x:Name="label3" Content="Info: during download the application might not respond." HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" FontSize="9.333"/>
+
+    </Grid>
+</Window>
